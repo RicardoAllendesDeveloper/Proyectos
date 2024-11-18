@@ -2,12 +2,12 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# Ruta principal con el menú
+
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Ruta para el Ejercicio 1
+
 @app.route('/ejercicio1', methods=['GET', 'POST'])
 def ejercicio1():
     result = None
@@ -38,7 +38,7 @@ def ejercicio1():
 
     return render_template('ejercicio1.html', result=result)
 
-# Ruta para el Ejercicio 2
+
 @app.route('/ejercicio2', methods=['GET', 'POST'])
 def ejercicio2():
     result = None
