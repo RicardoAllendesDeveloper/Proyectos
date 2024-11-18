@@ -49,7 +49,7 @@ def ejercicio2():
             request.form['name2'],
             request.form['name3']
         ]
-        # Encuentra el nombre más largo
+
         longest_name = max(names, key=len)
         result = {
             'longest_name': longest_name,
