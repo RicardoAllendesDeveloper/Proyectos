@@ -43,7 +43,7 @@ def ejercicio1():
 def ejercicio2():
     result = None
     if request.method == 'POST':
-        # Recoge los nombres del formulario
+
         names = [
             request.form['name1'],
             request.form['name2'],
