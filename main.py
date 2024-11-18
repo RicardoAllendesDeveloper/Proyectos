@@ -13,16 +13,16 @@ def ejercicio1():
     result = None
     if request.method == 'POST':
         try:
-            # Recoge las notas y la asistencia del formulario
+
             note1 = float(request.form['note1'])
             note2 = float(request.form['note2'])
             note3 = float(request.form['note3'])
             attendance = float(request.form['attendance'])
 
-            # Calcula el promedio
+
             average = (note1 + note2 + note3) / 3
 
-            # Determina el estado
+
             if average >= 40 and attendance >= 75:
                 status = "Aprobado"
             else:
